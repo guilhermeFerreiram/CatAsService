@@ -43,7 +43,7 @@
             // 
             // btnExcluir
             // 
-            btnExcluir.Location = new Point(576, 366);
+            btnExcluir.Location = new Point(213, 358);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(110, 23);
             btnExcluir.TabIndex = 1;
@@ -59,7 +59,7 @@
             Controls.Add(btnExcluir);
             Controls.Add(listBoxFavourites);
             Name = "FrmRelatorioFavoritos";
-            Text = "FrmRelatorioFavoritos";
+            Text = "Meus Favoritos";
             Load += FrmRelatorioFavoritos_Load;
             ResumeLayout(false);
         }

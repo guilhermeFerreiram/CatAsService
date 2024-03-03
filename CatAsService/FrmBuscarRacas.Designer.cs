@@ -46,6 +46,8 @@
             // 
             // panel1
             // 
+            panel1.AutoSize = true;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(lblDescricao);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(lblOrigem);
@@ -56,13 +58,14 @@
             panel1.Controls.Add(label1);
             panel1.Location = new Point(35, 34);
             panel1.Name = "panel1";
-            panel1.Size = new Size(302, 234);
+            panel1.Size = new Size(302, 338);
             panel1.TabIndex = 0;
             // 
             // lblDescricao
             // 
             lblDescricao.AutoSize = true;
-            lblDescricao.Location = new Point(149, 168);
+            lblDescricao.Location = new Point(149, 204);
+            lblDescricao.MaximumSize = new Size(120, 120);
             lblDescricao.Name = "lblDescricao";
             lblDescricao.Size = new Size(59, 15);
             lblDescricao.TabIndex = 7;
@@ -71,7 +74,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(67, 168);
+            label6.Location = new Point(67, 204);
             label6.Name = "label6";
             label6.Size = new Size(58, 15);
             label6.TabIndex = 6;
@@ -80,7 +83,7 @@
             // lblOrigem
             // 
             lblOrigem.AutoSize = true;
-            lblOrigem.Location = new Point(149, 134);
+            lblOrigem.Location = new Point(149, 177);
             lblOrigem.Name = "lblOrigem";
             lblOrigem.Size = new Size(59, 15);
             lblOrigem.TabIndex = 5;
@@ -89,16 +92,19 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(78, 134);
+            label4.Location = new Point(78, 177);
             label4.Name = "label4";
             label4.Size = new Size(47, 15);
             label4.TabIndex = 4;
             label4.Text = "Origem";
+            label4.Click += label4_Click;
             // 
             // lblTemperamento
             // 
             lblTemperamento.AutoSize = true;
-            lblTemperamento.Location = new Point(149, 89);
+            lblTemperamento.ForeColor = SystemColors.ControlText;
+            lblTemperamento.Location = new Point(149, 57);
+            lblTemperamento.MaximumSize = new Size(120, 0);
             lblTemperamento.Name = "lblTemperamento";
             lblTemperamento.Size = new Size(59, 15);
             lblTemperamento.TabIndex = 3;
@@ -107,7 +113,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(38, 89);
+            label2.Location = new Point(38, 57);
             label2.Name = "label2";
             label2.Size = new Size(87, 15);
             label2.TabIndex = 2;
@@ -117,7 +123,7 @@
             // 
             cbListaRacas.FormattingEnabled = true;
             cbListaRacas.Items.AddRange(new object[] { "Selecione uma Raça", "Abyssinian", "Aegean", "American Bobtail", "American Curl", "American Shorthair", "American Wirehair", "Arabian Mau", "Australian Mist", "Balinese" });
-            cbListaRacas.Location = new Point(149, 48);
+            cbListaRacas.Location = new Point(149, 19);
             cbListaRacas.Name = "cbListaRacas";
             cbListaRacas.Size = new Size(121, 23);
             cbListaRacas.TabIndex = 1;
@@ -125,7 +131,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(48, 51);
+            label1.Location = new Point(48, 22);
             label1.Name = "label1";
             label1.Size = new Size(77, 15);
             label1.TabIndex = 0;
@@ -133,7 +139,7 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(35, 388);
+            btnBuscar.Location = new Point(34, 388);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
             btnBuscar.TabIndex = 1;
@@ -143,7 +149,7 @@
             // 
             // btnFavoritar
             // 
-            btnFavoritar.Location = new Point(151, 388);
+            btnFavoritar.Location = new Point(122, 388);
             btnFavoritar.Name = "btnFavoritar";
             btnFavoritar.Size = new Size(75, 23);
             btnFavoritar.TabIndex = 2;
@@ -154,10 +160,12 @@
             // 
             // pictureCatImage
             // 
+            pictureCatImage.Image = Properties.Resources.gato_preto;
             pictureCatImage.ImageLocation = "";
             pictureCatImage.Location = new Point(375, 34);
             pictureCatImage.Name = "pictureCatImage";
             pictureCatImage.Size = new Size(361, 338);
+            pictureCatImage.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureCatImage.TabIndex = 3;
             pictureCatImage.TabStop = false;
             pictureCatImage.WaitOnLoad = true;
@@ -172,12 +180,13 @@
             Controls.Add(btnBuscar);
             Controls.Add(panel1);
             Name = "FrmBuscarRacas";
-            Text = "FrmBuscarRacas";
+            Text = "Buscar Raças";
             Load += FrmBuscarRacas_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureCatImage).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
