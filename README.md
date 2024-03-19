@@ -18,7 +18,7 @@
 <br>
 <h2 id="objective" align="center">:dart: Descrição</h2>
 
-<p align="center">O Cat As Service é um aplicativo Windows Forms que conecta os amantes de gatos a uma variedade de espécies felinas disponíveis para adoção, usando uma API especializada em informações sobre gatos. Neste projeto, tive a oportunidade de desenvolver meus conhecimentos em API's, teste de requisições com a ferramenta Postman e desserialização de respostas JSON.</p>
+<p align="center">O Cat As Service é um aplicativo Windows Forms que conecta os amantes de gatos a uma variedade de espécies felinas, usando uma API especializada em informações e fotos sobre gatos. Neste projeto, tive a oportunidade de desenvolver meus conhecimentos em API's, teste de requisições com a ferramenta Postman e desserialização de respostas JSON. Outro ponto interessante, é a funcionalidade de favoritar espécies, onde utilizei o método POST em um endpoint específico da API. Ao mesmo tempo, a lista de favoritos pode ser acessada em uma das telas do App.</p>
 
 <p align="center">
   <img src="https://github.com/guilhermeFerreiram/CatAsService/assets/153195124/7b979062-8f4f-4543-83aa-3f362f836984" alt="TelaBuscarRacas" />
