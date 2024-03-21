@@ -10,7 +10,8 @@
 
 <p align="center">
   <a href="#objective">:dart: Descrição</a> &bull;  
-  <a href="#techs">:pushpin: Tecnologias</a> &bull; 
+  <a href="#techs">:pushpin: Tecnologias</a> &bull;
+  <a href="#clone">:open_file_folder: Clone o Repositório</a> &bull;
   <a href="#author">:bust_in_silhouette: Autor</a> &bull; 
   <a href="#license">:page_with_curl: Licença</a>
 </p>
@@ -34,6 +35,16 @@
   JSON &bull;
   Postman
 </p>
+
+<br>
+<h2 id="clone" align="center">:open_file_folder: Clone o Repositório</h2>
+
+<p align="center">Para clonar o repositório, certifique-se de possuir o <kbd><a href="https://git-scm.com/downloads">Git</a></kbd> instalado em seu em seu computador...</p>
+
+``` bash
+# Clone todo o repositório
+$ git clone https://github.com/guilhermeFerreiram/CatAsService.git
+```
 
 <br>
 <h2 align="center" id="author">:bust_in_silhouette: Autor</h2>
